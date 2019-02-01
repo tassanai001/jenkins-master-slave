@@ -1,0 +1,6 @@
+authtoken: ULVodUYpT4Kps1zx8nP8_6i8GvKi8A9tmRL5L11JRo
+log: /d/lab/jenkins-master-slave/var/log/ngrok-jenkins2.log
+tunnels:
+  jenkins:
+    addr: 8080
+    proto: http

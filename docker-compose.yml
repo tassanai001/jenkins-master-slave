@@ -1,0 +1,34 @@
+version: "3.3"
+services:
+  jenkins1:
+    image: "jenkinsci/blueocean:latest"
+    ports:
+      - "8001:8080"
+      - "50000:50000"
+    volumes:
+      # - ./config/config.xml:/var/jenkins_home/config.xml
+      - ./jenkins-data:/var/jenkins_home
+      - ./var/run/docker.sock:/var/run/docker.sock
+      - ./project/:/home/
+    networks:
+      - back-tier
+  jenkins2:
+    image: "jenkinsci/blueocean:latest"
+    ports:
+      - "8002:8080"
+      - "50002:50000"
+      - "2222:22"
+    volumes:
+      # - ./config/slave-agent.jnlp:/var/jenkins_home/slave-agent.jnlp
+      - ./jenkins-slave-data:/var/jenkins_home
+      - ./var/run/docker.sock:/var/run/docker.sock
+      - ./project/:/home/
+    # command: java -jar /var/jenkins_home/agent.jar -jnlpUrl http://192.168.88.113:8001/computer/jenkins-slave-1/slave-agent.jnlp -workDir "/var/jenkins_home"
+    networks:
+      - back-tier
+networks:
+  back-tier:
+    driver: bridge
+
+# exec docker container with user root
+# docker-compose exec --user=root

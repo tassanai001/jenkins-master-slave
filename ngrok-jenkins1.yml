@@ -1,0 +1,6 @@
+authtoken: ULVodUYpT4Kps1zx8nP8_6i8GvKi8A9tmRL5L11JRo
+log: /Users/aycap/Labs/jenkins-master-slave/var/log/ngrok-jenkins1.log
+tunnels:
+  jenkins:
+    addr: 8001
+    proto: http

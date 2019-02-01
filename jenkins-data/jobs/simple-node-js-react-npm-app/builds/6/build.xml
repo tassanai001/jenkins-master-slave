@@ -1,0 +1,69 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.31">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause plugin="gitlab-plugin@1.5.11">
+            <data>
+              <actionType>PUSH</actionType>
+              <sourceProjectId>10574462</sourceProjectId>
+              <targetProjectId>10574462</targetProjectId>
+              <branch>master</branch>
+              <sourceBranch>master</sourceBranch>
+              <userName>tassanai</userName>
+              <userEmail>art.hiphop.eve@gmail.com</userEmail>
+              <sourceRepoHomepage>https://gitlab.com/tassanai/simple-node-js-react-npm-app</sourceRepoHomepage>
+              <sourceRepoName>simple-node-js-react-npm-app</sourceRepoName>
+              <sourceNamespace>tassanai</sourceNamespace>
+              <sourceRepoUrl>git@gitlab.com:tassanai/simple-node-js-react-npm-app.git</sourceRepoUrl>
+              <sourceRepoSshUrl>git@gitlab.com:tassanai/simple-node-js-react-npm-app.git</sourceRepoSshUrl>
+              <sourceRepoHttpUrl>https://gitlab.com/tassanai/simple-node-js-react-npm-app.git</sourceRepoHttpUrl>
+              <mergeRequestTitle></mergeRequestTitle>
+              <mergeRequestDescription></mergeRequestDescription>
+              <mergeRequestState></mergeRequestState>
+              <mergedByUser></mergedByUser>
+              <mergeRequestAssignee></mergeRequestAssignee>
+              <targetBranch>master</targetBranch>
+              <targetRepoName></targetRepoName>
+              <targetNamespace></targetNamespace>
+              <targetRepoSshUrl></targetRepoSshUrl>
+              <targetRepoHttpUrl></targetRepoHttpUrl>
+              <triggeredByUser>tassanai</triggeredByUser>
+              <before>135ae82b24d58efe724519f5ea33a88013c3707e</before>
+              <after>179317d2623eb64e7efe3321efe106d558099d3d</after>
+              <lastCommit>179317d2623eb64e7efe3321efe106d558099d3d</lastCommit>
+              <targetProjectUrl>https://gitlab.com/tassanai/simple-node-js-react-npm-app</targetProjectUrl>
+            </data>
+          </com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.plugins.git.RevisionParameterAction plugin="git@3.9.2">
+      <commit>179317d2623eb64e7efe3321efe106d558099d3d</commit>
+      <combineCommits>false</combineCommits>
+      <repoURL plugin="git-client@2.7.6">
+        <path>tassanai/simple-node-js-react-npm-app.git</path>
+        <rawPath>tassanai/simple-node-js-react-npm-app.git</rawPath>
+        <user>git</user>
+        <port>-1</port>
+        <host>gitlab.com</host>
+      </repoURL>
+    </hudson.plugins.git.RevisionParameterAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.12">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>8</queueId>
+  <timestamp>1548921722706</timestamp>
+  <startTime>1548921722719</startTime>
+  <result>FAILURE</result>
+  <description>Started by GitLab push by tassanai</description>
+  <duration>7561</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

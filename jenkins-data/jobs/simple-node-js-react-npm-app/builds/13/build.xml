@@ -1,0 +1,116 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.31">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause plugin="gitlab-plugin@1.5.11">
+            <data>
+              <actionType>PUSH</actionType>
+              <sourceProjectId>10574462</sourceProjectId>
+              <targetProjectId>10574462</targetProjectId>
+              <branch>master</branch>
+              <sourceBranch>master</sourceBranch>
+              <userName>tassanai</userName>
+              <userEmail>art.hiphop.eve@gmail.com</userEmail>
+              <sourceRepoHomepage>https://gitlab.com/tassanai/simple-node-js-react-npm-app</sourceRepoHomepage>
+              <sourceRepoName>simple-node-js-react-npm-app</sourceRepoName>
+              <sourceNamespace>tassanai</sourceNamespace>
+              <sourceRepoUrl>git@gitlab.com:tassanai/simple-node-js-react-npm-app.git</sourceRepoUrl>
+              <sourceRepoSshUrl>git@gitlab.com:tassanai/simple-node-js-react-npm-app.git</sourceRepoSshUrl>
+              <sourceRepoHttpUrl>https://gitlab.com/tassanai/simple-node-js-react-npm-app.git</sourceRepoHttpUrl>
+              <mergeRequestTitle></mergeRequestTitle>
+              <mergeRequestDescription></mergeRequestDescription>
+              <mergeRequestState></mergeRequestState>
+              <mergedByUser></mergedByUser>
+              <mergeRequestAssignee></mergeRequestAssignee>
+              <targetBranch>master</targetBranch>
+              <targetRepoName></targetRepoName>
+              <targetNamespace></targetNamespace>
+              <targetRepoSshUrl></targetRepoSshUrl>
+              <targetRepoHttpUrl></targetRepoHttpUrl>
+              <triggeredByUser>tassanai</triggeredByUser>
+              <before>c953fea18e82a1efd479dcb8bb4b7becfec30c71</before>
+              <after>ceff16cea91fb67bfa4be7dc8f8ccdef406b1adc</after>
+              <lastCommit>ceff16cea91fb67bfa4be7dc8f8ccdef406b1adc</lastCommit>
+              <targetProjectUrl>https://gitlab.com/tassanai/simple-node-js-react-npm-app</targetProjectUrl>
+            </data>
+          </com.dabsquared.gitlabjenkins.cause.GitLabWebHookCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <hudson.plugins.git.RevisionParameterAction plugin="git@3.9.2">
+      <commit>ceff16cea91fb67bfa4be7dc8f8ccdef406b1adc</commit>
+      <combineCommits>false</combineCommits>
+      <repoURL plugin="git-client@2.7.6">
+        <path>tassanai/simple-node-js-react-npm-app.git</path>
+        <rawPath>tassanai/simple-node-js-react-npm-app.git</rawPath>
+        <user>git</user>
+        <port>-1</port>
+        <host>gitlab.com</host>
+      </repoURL>
+    </hudson.plugins.git.RevisionParameterAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.12">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>20</queueId>
+  <timestamp>1548924245682</timestamp>
+  <startTime>1548924245695</startTime>
+  <result>SUCCESS</result>
+  <description>Started by GitLab push by tassanai</description>
+  <duration>9892</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node(&apos;master&apos;) {
+  stage (&apos;Build on master&apos;){
+    echo &apos;Running on master&apos;
+    sh &apos;ifconfig&apos;
+  }
+}
+
+node(&apos;jenkins-slave-1&apos;) {
+  stage (&apos;Build on master&apos;){
+    echo &apos;Running on jenkins-slave-1&apos;
+    sh &apos;sleep 5s&apos;
+    sh &apos;ifconfig&apos;
+  }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>342209000</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>25426500</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1134169400</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>66116200</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>164902300</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>24</iota>
+    <head>1:24</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

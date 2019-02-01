@@ -1,0 +1,31 @@
+Jan 31, 2019 10:49:49 AM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: jenkins-slave-1
+Jan 31, 2019 10:49:49 AM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+Jan 31, 2019 10:49:49 AM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3.27
+Jan 31, 2019 10:49:49 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using /var/jenkins_home/remoting as a remoting work directory
+Jan 31, 2019 10:49:50 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://5bd4ca9e.ngrok.io/, http://192.168.1.120:8001/]
+Jan 31, 2019 10:49:51 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Jan 31, 2019 10:49:56 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver isPortVisible
+WARNING: connect timed out
+Jan 31, 2019 10:49:56 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Jan 31, 2019 10:49:56 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: 192.168.1.120
+  Agent port:    50000
+  Identity:      25:57:6b:f1:f8:02:a4:28:a5:7a:6e:05:52:67:96:2d
+Jan 31, 2019 10:49:56 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Jan 31, 2019 10:49:56 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to 192.168.1.120:50000
+Jan 31, 2019 10:49:56 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Jan 31, 2019 10:49:56 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 25:57:6b:f1:f8:02:a4:28:a5:7a:6e:05:52:67:96:2d
+Jan 31, 2019 10:49:58 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
